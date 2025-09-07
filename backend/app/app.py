@@ -49,10 +49,10 @@ def get_invoices():
             if inv.get("data"):
                 structured_invoices.append(inv["data"])
 
-        print("📌 Structured invoices from DB:", structured_invoices)
+        print("Structured invoices from DB:", structured_invoices) #print invoices fetched from db
 
         return structured_invoices
 
     except Exception as e:
-        print("❌ Error fetching invoices:", e)
+        print("Error fetching invoices:", e)
         return []
