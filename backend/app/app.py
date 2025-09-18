@@ -20,6 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# upload endpoint
 @app.post("/upload", response_model=ExtractResponse)
 async def upload_document(file: UploadFile = File(...)):
 
