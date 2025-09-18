@@ -49,7 +49,7 @@ def get_invoices():
             if inv.get("data"):
                 structured_invoices.append(inv["data"])
 
-        print("Structured invoices from DB:", structured_invoices) #print invoices fetched from db
+        print("Structured invoices from DB:", structured_invoices)
 
         return structured_invoices
 
