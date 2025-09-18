@@ -40,6 +40,7 @@ async def upload_document(file: UploadFile = File(...)):
         print("Error occurred while uploading document:", e)
         return {"error": "Failed to upload document"}
 
+# invoice endpoint
 @app.get("/invoices")
 def get_invoices():
     try:
